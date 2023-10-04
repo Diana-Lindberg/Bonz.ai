@@ -1,0 +1,253 @@
+*{
+   box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background-color: whitesmoke;
+    font-family: sans-serif;
+}
+
+/*Header storlek och utseende*/
+header{
+    width: 100vw;
+    height: 20vh;
+    display: flex; 
+    justify-content:space-between;
+    align-items: center;
+    flex: 0 1 60%;
+    padding: 10px;
+    background-color: transparent;
+}
+
+/*header indexsidan*/
+.header__index{
+    position: absolute;
+}
+
+.header__logo{
+   margin-left: 20px;
+}
+
+nav{
+    flex: 1 0 40%;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+.main__image{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../image/photos/09-day.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 0;
+}
+
+.main__section{
+    display: flex;
+    width: 100vw;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main__heading{
+    width: 100vw;
+    height: 10vh;
+    text-align: center;
+    margin-top: 15%;
+    font-size: 80px;
+    color: black;
+}
+
+.main__text{
+    color: white;
+}
+
+.main__button{
+    width: 100px;
+    height: 50px;  
+}
+
+footer{
+    background-color: black;
+    width: 100vw;
+    height: 60vh;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+footer h2{
+    color: white;
+}
+
+footer i{
+    color: white;  
+    list-style: none;
+    padding-left: 10px;
+    margin: 10px;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* wrapper till om oss/infosida*/
+.wrapper{
+    
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: auto;
+    gap: 20px;
+}
+
+.about__img, .ide__img, .koncept__img, .goal__img, .environment__img{
+    width: 100%;
+}
+
+.about{
+grid-column: 1/ 5;
+padding: 20px;
+}
+
+.ide{
+    grid-column: 1/ 3; 
+    padding: 20px; 
+}
+
+.koncept{
+    grid-column: 3/ 5;
+     padding: 20px;
+}
+
+.goal{
+    grid-column: 1/ 3;
+    grid-row: 3;
+    padding: 20px;
+}
+
+.environment{
+   grid-column: 3/ 5;
+   grid-row: 3;
+   padding: 20px;
+}
+
+/*Bokningssidan*/
+
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    background-color: lightgray;
+}
+
+#navigation__room, #navigation__guests, #navigation__check__in, #navigation__check__out, .navigation__button:hover{
+    cursor: pointer;
+}
+
+#navigation__room, #navigation__guests, #navigation__check__in, #navigation__check__out{
+    height: 40px;
+    width: 200px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.navigation__button{
+    height: 40px;
+    width: 100px;
+    background-color: black;
+    color: white;
+}
+
+.facility__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid;
+}
+
+.facility__container p{
+padding: 10px;
+}
+
+.facility__container i{
+    padding-right: 15px;
+}
+
+.room__wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap:40px;
+}
+
+.room__wrapper img{
+    margin: 20px;
+}
+
+
+.room__wrapper, h2, p{
+    padding: 10px;
+    margin: 0;
+}
+
+.standard_room{
+grid-column: 1;
+}
+
+.superior__room{
+grid-column: 1;
+grid-row: 2;
+}
+
+.family__room{
+grid-column: 1;
+grid-row: 3;
+}
+
+.junior__room{
+grid-column: 1;
+grid-row: 4;
+}
+
+.room__button{
+width: 100px;
+height: 30px;
+background-color: black;
+color: white;
+}
+
+.standard__room, .superior__room, .family__room, .junior__room{
+    display: flex;
+    flex-direction: row;
+}
+
