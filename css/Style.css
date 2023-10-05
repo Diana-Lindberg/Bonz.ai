@@ -272,3 +272,99 @@ color: white;
     padding-bottom: 10px;
 }
 
+
+@media screen and (max-width: 768px){
+    .header__logo{
+        margin-left: 5px;
+     }
+
+
+     .main__heading{
+        width: 100vw;
+        height: 10vh;
+        text-align: center;
+        margin-top: 40%;
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+
+    .main__button{
+        width: 80px;
+        height: 30px;  
+    }
+
+    .main__image{
+       
+        background-image: url("../image/photos/09-day.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: 12px;
+        height: 200px;
+    }
+
+    footer i{
+        margin: 0;
+        padding: 5px;
+    }
+
+    .navigation{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        background-color: whitesmoke;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        margin-left: 20px;
+        height: 150px;
+    }
+
+    #navigation__room, #navigation__guests, #navigation__check__in, #navigation__check__out{
+        width: 150px;
+    }
+
+.facility__container{
+  display: grid;
+}
+
+.room__wrapper{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 10px;
+}
+
+.room__wrapper img{
+    height: 200px;
+    margin: 10px;
+}
+
+.standard__room, .superior__room, .family__room, .junior__room{
+display: grid;
+margin: 0;
+width: 200px;
+}
+
+.room_discription{
+    margin: 10px;
+}
+
+.wrapper{
+   display: flex;
+   flex-direction: column;
+}
+
+.about__heading{
+    text-align: center;
+}
+
+.about__img{
+    height: 300px;
+}
+
+
+}
